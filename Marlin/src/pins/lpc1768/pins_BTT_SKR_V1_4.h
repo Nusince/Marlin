@@ -26,6 +26,15 @@
 #endif
 
 //
+// EEPROM
+//
+#define I2C_EEPROM
+#ifdef E2END
+  #undef E2END
+#endif
+#define E2END 0x7FFF
+
+//
 // SD Connection
 //
 #ifndef SDCARD_CONNECTION
